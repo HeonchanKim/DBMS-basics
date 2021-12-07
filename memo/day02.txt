@@ -1,0 +1,26 @@
+오라클 DBMS 버전
+
+i : internet
+g : grid
+c : cloud
+-------------------------------
+계정
+	sys		: 모든 권한
+	system 		: 계정 관리
+	일반 계정		: 해당 스키마 관리(hr,op,he,scott,...)
+
+CMD
+sqlplus sys as sysdba
+1234
+SQL>alter user system identified by 1234;
+SQL>conn system/1234;
+SQL>alter user hr account unlock;
+SQL>alter user hr identified by hr;
+SQL>conn hr/hr
+------------------------------------
+스키마 : 정리가 잘 되어 있는 표들의 묶음, 상태
+------------------------------------
+RDBMS(관계형 데이터베이스 시스템)
+	테이블끼리 서로 관계를 맺는다.
+------------------------------------	
+

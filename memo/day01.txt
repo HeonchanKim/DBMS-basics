@@ -1,0 +1,14 @@
+DB(Database)
+	데이터가 모여있는 기지.
+	추상적인 용어.
+
+DBMS(Database Management System)
+	데이터를 관리할 수 있는 구체적인 시스템.
+	오라클, 마리아DB, MySQL, Mongo,.....
+
+오라클 DBMS 설치
+	www.oracle.com/index/html
+
+오라클DBMS 설치 확인
+	cmd창 열기 > sqlplus sys as sysdba > 비밀번호 > 입력
+	SQL > 나오면 성공!
