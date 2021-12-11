@@ -1,0 +1,36 @@
+--PLAYER 테이블에서 TEAM_ID가 'K01'인 선수 이름을 내 이름으로 바꾸기
+UPDATE PLAYER
+SET PLAYER_NAME = '김헌찬'
+WHERE TEAM_ID = 'K01';
+
+SELECT * FROM PLAYER;
+
+--PLAYER 테이블에서 POSITIO이 'MF'인 선수 삭제하기
+DELETE FROM PLAYER
+WHERE "POSITION" = 'MF';
+
+SELECT * FROM PLAYER
+WHERE "POSITION" = 'MF';
+
+--PLAYER 테이블에서 HEIGHT가 180이상인 선수 삭제하기
+DELETE FROM PLAYER WHERE HEIGHT >= 180;
+
+SELECT * FROM PLAYER WHERE HEIGHT >= 180;
+
+--AS(ALIAS) : 별칭
+--SELECT절 : AS 뒤에 별칭 작성, 한 칸 띄우고 작성 A AS B, A B
+--FROM절 : 한 칸 띄우고 작성
+
+SELECT PLAYER_ID AS "선수 번호" FROM PLAYER;
+SELECT PLAYER_ID "선수 번호" FROM PLAYER;
+SELECT PLAYER_ID "선수 번호", PLAYER_NAME AS "선수 이름" FROM PLAYER;
+
+--PLAYER 테이블에서 BACK_NUM를 "등 번호"로, NICKNAME을 "선수 별명"으로 바꿔서 검색
+SELECT BACK_NO AS "등 번호", NICKNAME AS "선수 별명" FROM PLAYER;
+
+SELECT P.TEAM_ID "선수 테이블", T.TEAM_ID "팀 테이블" FROM PLAYER P, TEAM T;
+
+
+
+
+
